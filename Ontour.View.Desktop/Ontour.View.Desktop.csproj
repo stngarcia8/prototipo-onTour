@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9FD7B4AF-6231-4CF6-BCFB-AE5C5B70C9BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ontour.View.Desktop</RootNamespace>
+    <AssemblyName>OntourApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>F:\appz\visualStudioFrameworks\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>F:\appz\visualStudioFrameworks\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>F:\appz\visualStudioFrameworks\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\Administrador\ActividadesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\ActividadesForm.Designer.cs">
+      <DependentUpon>ActividadesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\DestinosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\DestinosForm.Designer.cs">
+      <DependentUpon>DestinosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\HotelesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\HotelesForm.Designer.cs">
+      <DependentUpon>HotelesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\PrincipalAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\PrincipalAdminForm.Designer.cs">
+      <DependentUpon>PrincipalAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\TourForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\TourForm.Designer.cs">
+      <DependentUpon>TourForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\TransportesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\TransportesForm.Designer.cs">
+      <DependentUpon>TransportesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cliente\EstadoDelCursoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cliente\EstadoDelCursoForm.Designer.cs">
+      <DependentUpon>EstadoDelCursoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cliente\PrincipalClienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cliente\PrincipalClienteForm.Designer.cs">
+      <DependentUpon>PrincipalClienteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ejecutivo\ClientesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ejecutivo\ClientesForm.Designer.cs">
+      <DependentUpon>ClientesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ejecutivo\ConsultaMontosAportadosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ejecutivo\ConsultaMontosAportadosForm.Designer.cs">
+      <DependentUpon>ConsultaMontosAportadosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ejecutivo\EstadoAvanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ejecutivo\EstadoAvanceForm.Designer.cs">
+      <DependentUpon>EstadoAvanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ejecutivo\PrincipalEjecutivoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ejecutivo\PrincipalEjecutivoForm.Designer.cs">
+      <DependentUpon>PrincipalEjecutivoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\InicioDeSesionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\InicioDeSesionForm.Designer.cs">
+      <DependentUpon>InicioDeSesionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\UtilForms\EstudianteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\UtilForms\EstudianteForm.Designer.cs">
+      <DependentUpon>EstudianteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\UtilForms\SeleccionDeActividadesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\UtilForms\SeleccionDeActividadesForm.Designer.cs">
+      <DependentUpon>SeleccionDeActividadesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\UtilForms\SeleccionDeDestinosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\UtilForms\SeleccionDeDestinosForm.Designer.cs">
+      <DependentUpon>SeleccionDeDestinosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Administrador\ActividadesForm.resx">
+      <DependentUpon>ActividadesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\DestinosForm.resx">
+      <DependentUpon>DestinosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\HotelesForm.resx">
+      <DependentUpon>HotelesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\PrincipalAdminForm.resx">
+      <DependentUpon>PrincipalAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\TourForm.resx">
+      <DependentUpon>TourForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\TransportesForm.resx">
+      <DependentUpon>TransportesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cliente\EstadoDelCursoForm.resx">
+      <DependentUpon>EstadoDelCursoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cliente\PrincipalClienteForm.resx">
+      <DependentUpon>PrincipalClienteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ejecutivo\ClientesForm.resx">
+      <DependentUpon>ClientesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ejecutivo\ConsultaMontosAportadosForm.resx">
+      <DependentUpon>ConsultaMontosAportadosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ejecutivo\EstadoAvanceForm.resx">
+      <DependentUpon>EstadoAvanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ejecutivo\PrincipalEjecutivoForm.resx">
+      <DependentUpon>PrincipalEjecutivoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\InicioDeSesionForm.resx">
+      <DependentUpon>InicioDeSesionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\UtilForms\EstudianteForm.resx">
+      <DependentUpon>EstudianteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\UtilForms\SeleccionDeActividadesForm.resx">
+      <DependentUpon>SeleccionDeActividadesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\UtilForms\SeleccionDeDestinosForm.resx">
+      <DependentUpon>SeleccionDeDestinosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bannerOnTour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IniciarSesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bannerOnTour1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onTourImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ontour.Business\Ontour.Business.csproj">
+      <Project>{88506a19-3a6f-4c6d-802d-2fba6cf2b669}</Project>
+      <Name>Ontour.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ontour.Domain\Ontour.Domain.csproj">
+      <Project>{6d24f81d-03a5-4cda-aba2-0106af17ade3}</Project>
+      <Name>Ontour.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inhabilitar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\destinos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\activities.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bannerCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bannerEjecutivo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
